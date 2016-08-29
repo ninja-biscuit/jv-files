@@ -51,70 +51,12 @@
 		</li>		
 	</ul>	
 </div>
+
+<script type="text/javascript" src="js/zonky-slider.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		/* TOP SLIDER  */
-		/* slider basic */
-		var sliderTotalWidth = $('.slide-container').width();
-		var sliderList = $('.slider-container > .slide-list').outerWidth();
-		$('.slider-container > .slide-container').width(sliderTotalWidth - sliderList);
-		/* slider */
-		var listLength = $('.slider-container > .slide-list > li').length;		
-
-		$('.slider-container > .slide-list > li').each(function(){
-			var listSliderImg = $('img', this).attr('src');
-			var listSliderH3 = $('h3', this).html();
-			var listSliderParagraph = $('p', this).html();
-			var listSliderLink =  $(this).data('link');
-			var sliderStructure = '<li class="slide"><img src="'+ listSliderImg +'" alt="#" /><div class="caption-container"><h3>'+ listSliderH3 +'</h3><p>'+ listSliderParagraph +'</p><a href="'+ listSliderLink +'">LEER MÁS</a></div></li>';
-			$('.slide-container ul').append(sliderStructure);			
-		});
-		
-		// cambio automatico de slide
-		function changeSlide(){
-			var currentSlide = $('.slide-list').find('li.active').index();			
-			if(currentSlide < listLength){
-				// cambiar de slide
-				$('.slide-container ul').fadeOut(100, function(){
-					var currentOne = $('.slide-list li.active');
-					$('.slide-list li.active').next('li').addClass('active');
-					currentOne.removeClass('active');
-					var currentSlide2 = $('.slide-list').find('li.active').index();
-					
-					console.log(currentSlide2);
-					$(this).css('top', currentSlide2 * 450 * -1);
-					$(this).fadeIn(100);
-					
-				});
-			} else {
-				$('.slide-list > li').removeClass('active');
-				$('.slide-list > li').first().addClass('active');
-				$(this).css('top', 0);
-			}
-		}
-		
-
-		// cambiar slide manual
-		var listSlideOuterHeight = $('.slide-container > ul > .slide').outerHeight();
-		$('.slide-list > li').click(function(){
-			//window.clearInterval(changeSlide);
-			var indexClicked = $(this).index();
-			$('.slide-list > li').removeClass('active');
-			$(this).addClass('active')
-			$('.slide-container ul').fadeOut(100, function(){
-				$(this).css('top', indexClicked * 450 * -1);
-				$(this).fadeIn(100);
-			});
-
-		});
-
-		
-		
-
-
-
-		
-	});
+		$('.slider-container').zonky();
+	});	
 </script>
 </body>
 </html>

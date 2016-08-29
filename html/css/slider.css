@@ -32,7 +32,7 @@ table {
 /* top slider */
 .slider-container {width: 1140px; height: 450px; border: 1px solid #888;}
 .slider-container > .slide-container {display: table-cell; float: left; width: 100%; height: 450px; overflow:hidden; position: relative; background-color: #000}
-.slider-container > .slide-list {width: 330px; float: right; height: 450px; display: table-cell;}
+.slider-container > .slide-list {width: 330px; float: right; height: 450px; display: table-cell; padding-top: 1px}
 .slider-container > .slide-container ul {position: absolute; top: 0; left: 0}
 .slider-container > .slide-container .slide {width: 100%; position: relative; overflow: hidden; height: 450px;}
 .slider-container > .slide-container .slide > img {width: 100%; display: block; z-index: 0}
@@ -42,7 +42,7 @@ table {
 .slider-container > .slide-container .slide > .caption-container a {color: #fff; display: inline-block; float: right; margin-right: 35px; font-family: 'Oswald', sans-serif; font-size:22px; text-decoration: none; background-color:#00b232; padding:10px 21px; overflow: hidden; max-height:64px;}
 .slider-container > .slide-list li {padding: 11px 11px 12px; cursor: pointer; border-bottom: 1px solid #888; border-top: 1px solid transparent; display: table; position: relative;}
 .slider-container > .slide-list li:last-child {border-bottom: 1px solid transparent}
-.slider-container > .slide-list li > .left-tip {z-index:10; border-width: 45px 17px; border-style: solid; border-color:transparent; border-right-color:#b20000; display: none; position: absolute; left: -34px; top: 0px }
+.slider-container > .slide-list li > .left-tip {z-index:10; border-width: 45px 27px; border-style: solid; border-color:transparent; border-right-color:#b20000; display: none; position: absolute; left: -54px; top: 0px }
 .slider-container > .slide-list li.active > .left-tip {display: block;}
 .slider-container > .slide-list li > img {width: 115px; float: left; margin-right: 11px;}
 .slider-container > .slide-list li > h3 {font-family: 'Oswald', sans-serif; font-weight:100; color:#333333; font-size:14px; line-height:16px;}
