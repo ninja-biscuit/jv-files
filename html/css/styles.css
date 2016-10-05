@@ -1,0 +1,64 @@
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.d-site-style h1, .d-site-style h2, .d-site-style h3, .d-site-style h4 {margin: 0}
+.main-container {margin-top:51px;}
+.horizontal-scroller {width: 100%; overflow:auto; overflow-y: hidden; min-height: 178px; -ms-overflow-y: hidden; white-space: nowrap; border-top:1px solid #d1d1d1; border-bottom:1px solid #d1d1d1;}
+.horizontal-scroller .horizontal-scroller-news {width: 195px; height: 178px; padding: 6px; border-left:1px solid #d1d1d1; float:left;}
+.horizontal-scroller .horizontal-scroller-news:last-child {border-right:1px solid #d1d1d1;}
+.horizontal-scroller .horizontal-scroller-news > h3 {font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: 100; padding: 5px 0; display: block; white-space: normal;}
+.horizontal-scroller .horizontal-scroller-news > img {width: 180px}
+
+
+/* mas noticias */
+#more-news {padding-right: 0px}
+#more-news header {display: block; float: left; width: 100%;padding-right: 15px}
+#more-news header .navbar-right {margin-top: 9px}
+#more-news header h2 {color: #333; font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 100; padding: 13px 0}
+#more-news article {float: left;}
+#more-news article div {border-left: 1px solid #d1d1d1; border-right: 1px solid #d1d1d1; border-top: 1px solid #d1d1d1; height: 171px; padding: 8px; position: relative;} 
+#more-news article div figure {display: inline-block; float: left;}
+#more-news article div figure img {width: 154px; background-position: center; background-size: cover; background-repeat: no-repeat; margin-right: 8px}
+#more-news article div h3 {color: #333; font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 100; text-transform: uppercase; margin-bottom: 10px}
+#more-news article div ul {bottom: 5px; margin-bottom: 0; padding-left: 163px; position: absolute; top: auto;} 
+#more-news article .post-category, #more-news article .post-date {font-size: 12px}
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {}
