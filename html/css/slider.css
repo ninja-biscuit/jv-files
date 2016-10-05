@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* top slider */
 .slider-container {width: 100%; height: 450px; border: 1px solid #d1d1d1; border-bottom:none;}
 .slider-container > .slide-container {display: table-cell; float: left; width: 100%; height: 450px; overflow:hidden; position: relative; background-color: #000}
@@ -5,10 +6,51 @@
 .slider-container > .slide-container ul {position: absolute; top: 0; left: 0; width: 100%}
 .slider-container > .slide-container .slide {width: 100%; position: relative; overflow: hidden; height: 450px;}
 .slider-container > .slide-container .slide > img {width: 100%; display: block; z-index: 0; background-size: cover; background-repeat: no-repeat; background-position: center; height: 100%}
+=======
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* top slider */
+.slider-container {width: 1140px; height: 450px; border: 1px solid #888;}
+.slider-container > .slide-container {display: table-cell; float: left; width: 100%; height: 450px; overflow:hidden; position: relative; background-color: #000}
+.slider-container > .slide-list {width: 330px; float: right; height: 450px; display: table-cell; padding-top: 1px}
+.slider-container > .slide-container ul {position: absolute; top: 0; left: 0}
+.slider-container > .slide-container .slide {width: 100%; position: relative; overflow: hidden; height: 450px;}
+.slider-container > .slide-container .slide > img {width: 100%; display: block; z-index: 0}
+>>>>>>> origin/master
 .slider-container > .slide-container .slide > .caption-container {z-index: 1; position: absolute; top: auto; bottom: 0; width: 100%; background-color: rgba(0,0,0, 0.20); max-height: 180px; min-height: 130px}
 .slider-container > .slide-container .slide > .caption-container h3 {padding:14px 13px;color: #fff; font-family: 'Oswald', sans-serif; font-size: 30px;}
 .slider-container > .slide-container .slide > .caption-container p {padding:0px 13px; font-family: 'Roboto', sans-serif; display: inline-block; color:#fff; width: 77%}
 .slider-container > .slide-container .slide > .caption-container a {color: #fff; display: inline-block; float: right; margin-right: 35px; font-family: 'Oswald', sans-serif; font-size:22px; text-decoration: none; background-color:#00b232; padding:10px 21px; overflow: hidden; max-height:64px;}
+<<<<<<< HEAD
 .slider-container > .slide-list li {height:90px; padding: 11px 11px 12px; cursor: pointer; border-bottom: 1px solid #888; border-top: 1px solid transparent; display: block; position: relative;}
 .slider-container > .slide-list li:last-child {border-bottom: 1px solid transparent;}
 .slider-container > .slide-list li > .left-tip {z-index:10; border-width: 45px 27px; border-style: solid; border-color:transparent; border-right-color:#b20000; display: none; position: absolute; left: -54px; top: 0px }
@@ -38,3 +80,15 @@
  
 /* Landscape phones and down */
 @media (max-width: 480px) {}
+=======
+.slider-container > .slide-list li {padding: 11px 11px 12px; cursor: pointer; border-bottom: 1px solid #888; border-top: 1px solid transparent; display: table; position: relative;}
+.slider-container > .slide-list li:last-child {border-bottom: 1px solid transparent}
+.slider-container > .slide-list li > .left-tip {z-index:10; border-width: 45px 27px; border-style: solid; border-color:transparent; border-right-color:#b20000; display: none; position: absolute; left: -54px; top: 0px }
+.slider-container > .slide-list li.active > .left-tip {display: block;}
+.slider-container > .slide-list li > img {width: 115px; float: left; margin-right: 11px;}
+.slider-container > .slide-list li > h3 {font-family: 'Oswald', sans-serif; font-weight:100; color:#333333; font-size:14px; line-height:16px;}
+.slider-container > .slide-list li > p {font-family: 'Roboto', sans-serif; font-size:12px; color: #888888; display: block; overflow: hidden; height:26px; line-height: 14px}
+.slider-container > .slide-list li.active {background-color: #b20000; border-bottom: 1px solid #6e0000; border-top: 1px solid #fe9e9e;}
+.slider-container > .slide-list li.active > .left-tip {display: block;}
+.slider-container > .slide-list li.active > h3, .slider-container > .slide-list li.active > p {color: #fff}
+>>>>>>> origin/master
